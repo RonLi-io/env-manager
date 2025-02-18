@@ -153,7 +153,7 @@ class EnvManager:
 def main():
     parser = argparse.ArgumentParser(description='CLI Environment Variable Manager')
     parser.add_argument('--file', '-f', default='.env.example',
-                      help='Path to env file (default: env-prod)')
+                      help='Path to env file (default: .env.example)')
     args = parser.parse_args()
 
     env_manager = EnvManager(args.file)
